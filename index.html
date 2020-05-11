@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <title>Rohil.</title>
+    <title>Rohil</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <!-- Navbar -->
         <nav class="navbar">
             <ul>
-                <li><a onclick="toHome()">rohil.</a></li>
+                <li><a class="medium" onclick="toHome()">rohil.</a></li>
                 <li style="float:right"><a onclick="toContact()">CONTACT</a></li>
                 <li style="float:right"><a href="#blog">BLOG</a></li>
                 <li style="float:right"><a href="#resume">RESUME</a></li>
@@ -31,11 +31,10 @@
         <div class="about flex-container" id="about">
             <div class="content">
                 <p>
-                    <b>
-                        engaged in <br>
-                        everything
-                        design;<br>
-                    </b> print, screen <br> and space <br>
+
+                    <div class="semi-bold">engaged in <br> everything design;
+                        <br></div>
+                    <div class="light">print, screen <br> and space <br></div>
                 </p>
             </div>
             <div class="name">
@@ -44,7 +43,7 @@
                 </b>
 
                 <p>Designer, Product</p>
-                <div class="projects"><a href="#">View Projects ></a></div>
+                <div class="projects medium"><a href="#">View Projects ></a></div>
             </div>
         </div>
 
@@ -54,7 +53,7 @@
             <div class="content">
                 <p>
                     <b>
-                       Contact
+                        Contact
                     </b> <br> email@example.com <br>
                 </p>
             </div>
@@ -64,23 +63,52 @@
                 </b>
 
                 <p>Designer, Product</p>
-                <div class="projects"><a href="#">View Projects ></a></div>
+                <div class="projects medium"><a href="#">View Projects ></a></div>
             </div>
         </div>
 
 
 
-        <!-- Bottom Nav -->
-        <nav class="bottom-navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-        </nav>
 
 
 
     </div>
 
+
+    <!-- Mobile version -->
+    <div class="mobile-container">
+
+        <!-- Head -->
+        <div class="head">
+            <p>
+                rohil
+            </p>
+        </div>
+
+
+        <!-- About -->
+        <div class="mob-about">
+            <p>
+                <div class="semi-bold">engaged in <br> everything <br> design;
+                    <br></div>
+                <div class="light">print, screen <br> and <br> space <br></div>
+            </p>
+        </div>
+
+        <!-- Project Link -->
+        <div>
+            <div class="projects medium"><a href="#">View Projects ></a></div>
+        </div>
+
+        <!-- Bottom Nav -->
+        <nav class="bottom-navbar">
+            <a href="#resume">RESUME</a>
+            <a href="#blog">BLOG</a>
+            <a onclick="">CONTACT</a>
+        </nav>
+
+
+    </div>
 
 </body>
 
