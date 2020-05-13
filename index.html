@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+
     <title>Rohil Nair</title>
 </head>
 
@@ -19,7 +20,7 @@
         <nav class="navbar">
             <ul>
                 <li>
-                    <div><a style="display: inline;" class="rohil medium" onclick="toHome()">rohil.</a><span class='active' id="breadcrumbs"></span></div>
+                    <div><a style="display: inline;" class="rohil medium" onclick="toHome()">rohil.</a><span class='rohil active' id="breadcrumbs"></span></div>
                 </li>
                 <li style="float:right" class="menu-item"><a id="contact-item" onclick="toContact()">CONTACT</a></li>
                 <li style="float:right" class="menu-item"><a href="#blog">BLOG</a></li>
@@ -58,8 +59,14 @@
                 <p>
                     <b>
                         Contact
-                    </b> <br> email@example.com <br>
+                    </b> <br> rohilnair@gmail.com <br>
                 </p>
+                <div class="write medium">
+                    <div>
+                        <a href="mailto:rohilnair@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            &nbsp Write me a mail</a>
+                    </div>
+                </div>
             </div>
             <div class="name">
                 <div class="projects medium"><a href="#">View Projects ></a></div>
@@ -85,10 +92,11 @@
     <div class="mobile-container">
 
         <!-- Head -->
-        <div class="head">
-            <p>
+        <div class="head" onclick="toMobHome()">
+            <span>
                 rohil.
-            </p>
+            </span>
+            <span id="mob-breadcrumbs" class="active"></span>
         </div>
 
 
@@ -103,13 +111,18 @@
 
         <!-- Contact -->
         <div class="mob-contact hide" id="mob-contact">
-            <!-- <p> -->
             <p>
                 <b>
-                        Contact
-                    </b> <br> email@example.com <br>
+                    Contact
+                </b> <br> rohilnair@gmail.com <br>
             </p>
-            <!-- </p> -->
+            <!-- Write mail -->
+            <div class="mob-write medium">
+                <div>
+                    <a href="mailto:rohilnair@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        &nbsp Write me a mail</a>
+                </div>
+            </div>
         </div>
 
         <!-- Project Link -->
@@ -128,5 +141,6 @@
     </div>
 
 </body>
+<script src="main.js"></script>
 
 </html>

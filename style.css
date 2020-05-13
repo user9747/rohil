@@ -49,7 +49,7 @@ body {
 }
 
 .navbar li a {
-    display: block;
+    display: inline;
     color: var(--color);
     text-align: center;
     padding: 14px 0px;
@@ -61,6 +61,8 @@ body {
 
 .rohil {
     font-size: 1.3rem !important;
+    letter-spacing: initial !important;
+    line-height: .1rem !important;
 }
 
 .menu-item {
@@ -115,6 +117,27 @@ body {
     margin: 0px;
 }
 
+.write {
+    padding-top: 5%;
+}
+
+.write a {
+    text-decoration: none;
+    color: rgb(0, 142, 161);
+    font-size: 1rem;
+    letter-spacing: .05rem;
+}
+
+.write a:hover {
+    text-decoration: underline;
+    color: rgb(125, 199, 199);
+}
+
+.write i {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
 .name {
     font-size: 1.2rem;
     /* align-self: flex-end; */
@@ -167,7 +190,24 @@ body {
     .mob-contact {
         font-size: 1.5rem;
         line-height: 2.8rem;
-        padding-bottom: 40%;
+        padding-bottom: 10%;
+    }
+    .mob-write {
+        padding-top: 30%;
+    }
+    .mob-write a {
+        text-decoration: none;
+        color: rgb(0, 142, 161);
+        font-size: 1rem;
+        letter-spacing: .05rem;
+    }
+    .mob-write a:hover {
+        text-decoration: underline;
+        color: rgb(125, 199, 199);
+    }
+    .mob-write i {
+        font-size: 1.2rem;
+        font-weight: 900;
     }
     .mob-projects a {
         text-decoration: none;
