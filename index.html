@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <title>Rohil</title>
+    <title>Rohil Nair</title>
 </head>
 
 <body>
@@ -18,17 +18,19 @@
         <!-- Navbar -->
         <nav class="navbar">
             <ul>
-                <li><a class="medium" onclick="toHome()">rohil.</a></li>
-                <li style="float:right"><a onclick="toContact()">CONTACT</a></li>
-                <li style="float:right"><a href="#blog">BLOG</a></li>
-                <li style="float:right"><a href="#resume">RESUME</a></li>
+                <li>
+                    <div><a style="display: inline;" class="rohil medium" onclick="toHome()">rohil.</a><span class='active' id="breadcrumbs"></span></div>
+                </li>
+                <li style="float:right" class="menu-item"><a id="contact-item" onclick="toContact()">CONTACT</a></li>
+                <li style="float:right" class="menu-item"><a href="#blog">BLOG</a></li>
+                <li style="float:right" class="menu-item"><a href="#resume">RESUME</a></li>
             </ul>
         </nav>
 
 
 
         <!-- About -->
-        <div class="about flex-container" id="about">
+        <div class="flex-container" id="about">
             <div class="content">
                 <p>
 
@@ -38,19 +40,21 @@
                 </p>
             </div>
             <div class="name">
-                <b>
-                    <p>Rohil Nair</p>
-                </b>
-
-                <p>Designer, Product</p>
                 <div class="projects medium"><a href="#">View Projects ></a></div>
+                <div>
+                    <b>
+                        <p>Rohil Nair</p>
+                    </b>
+
+                    <p>Designer, Product</p>
+                </div>
             </div>
         </div>
 
 
         <!-- Contact -->
-        <div class="about flex-container hide" id="contact">
-            <div class="content">
+        <div class="flex-container-contact  hide" id="contact">
+            <div class="contact">
                 <p>
                     <b>
                         Contact
@@ -58,12 +62,14 @@
                 </p>
             </div>
             <div class="name">
-                <b>
-                    <p>Rohil Nair</p>
-                </b>
-
-                <p>Designer, Product</p>
                 <div class="projects medium"><a href="#">View Projects ></a></div>
+                <div>
+                    <b>
+                        <p>Rohil Nair</p>
+                    </b>
+
+                    <p>Designer, Product</p>
+                </div>
             </div>
         </div>
 
@@ -81,13 +87,13 @@
         <!-- Head -->
         <div class="head">
             <p>
-                rohil
+                rohil.
             </p>
         </div>
 
 
         <!-- About -->
-        <div class="mob-about">
+        <div class="mob-about" id="mob-about">
             <!-- <p> -->
             <div class="semi-bold">engaged in <br> everything <br> design;
                 <br></div>
@@ -95,16 +101,27 @@
             <!-- </p> -->
         </div>
 
+        <!-- Contact -->
+        <div class="mob-contact hide" id="mob-contact">
+            <!-- <p> -->
+            <p>
+                <b>
+                        Contact
+                    </b> <br> email@example.com <br>
+            </p>
+            <!-- </p> -->
+        </div>
+
         <!-- Project Link -->
-        <div class="projects">
-            <div class="projects medium"><a href="#">View Projects ></a></div>
+        <div class="mob-projects" id="mob-projects">
+            <div class="medium"><a href="#">View Projects ></a></div>
         </div>
 
         <!-- Bottom Nav -->
         <nav class="bottom-navbar semi-bold">
             <a href="#resume">RESUME</a>
             <a href="#blog">BLOG</a>
-            <a onclick="">CONTACT</a>
+            <a id="mob-contact-item" onclick="toMobContact()">CONTACT</a>
         </nav>
 
 

@@ -37,7 +37,6 @@ body {
 }
 
 .navbar ul {
-    font-size: 1rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -53,13 +52,27 @@ body {
     display: block;
     color: var(--color);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 0px;
     text-decoration: none;
     font-weight: 600;
+    font-size: .85rem;
+    letter-spacing: .2rem;
+}
+
+.rohil {
+    font-size: 1.3rem !important;
+}
+
+.menu-item {
+    padding-left: 6%;
 }
 
 .navbar li a:hover {
     color: rgb(133, 133, 133);
+}
+
+.active {
+    color: rgb(133, 133, 133) !important;
 }
 
 .flex-container {
@@ -67,26 +80,46 @@ body {
     flex-direction: column;
     height: 100%;
     /* align-items: flex-start; */
-    justify-content: end;
+    justify-content: flex-end;
 }
 
-.about {
-    padding-left: 14px;
+.flex-container-contact {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* align-items: flex-start; */
+    justify-content: space-between;
 }
 
 .content {
     font-size: 3rem;
     align-self: flex-start;
     line-height: 4.5rem;
+    padding-bottom: 3%;
 }
 
 .content p {
     margin: 0px;
 }
 
+.contact {
+    font-size: 2rem;
+    display: grid;
+    align-self: flex-start;
+    justify-self: first baseline;
+    line-height: 3rem;
+    padding-top: 10%;
+}
+
+.contact p {
+    margin: 0px;
+}
+
 .name {
     font-size: 1.2rem;
-    align-self: flex-end;
+    /* align-self: flex-end; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .name p {
@@ -99,12 +132,8 @@ body {
 }
 
 .projects a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: rgb(125, 199, 199);
-}
-
-.projects {
-    padding-top: 30px;
 }
 
 .mobile-container {
@@ -118,7 +147,7 @@ body {
     .mobile-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         height: 88%;
         padding: 5%;
     }
@@ -128,14 +157,28 @@ body {
     }
     .head p {
         margin: 0px;
-        padding-bottom: 6%;
+        padding-bottom: 8%;
     }
     .mob-about {
         font-size: 1.7rem;
         line-height: 3rem;
     }
-    .projects {
-        padding: 6% 0px;
+    .mob-contact {
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+        padding-bottom: 40%;
+    }
+    .mob-projects a {
+        text-decoration: none;
+        color: rgb(0, 142, 161);
+    }
+    .mob-projects a:hover {
+        text-decoration: none;
+        color: rgb(125, 199, 199);
+    }
+    .mob-projects {
+        /* padding-top: 6%; */
+        padding-bottom: 6%;
     }
     /* bottom nav */
     .bottom-navbar {
@@ -148,8 +191,6 @@ body {
         justify-content: space-between;
     }
     .bottom-navbar a {
-        float: left;
-        display: block;
         color: var(--color);
         text-align: center;
         text-decoration: none;
@@ -157,9 +198,5 @@ body {
     }
     .bottom-navbar a:hover {
         color: rgb(133, 133, 133);
-    }
-    .bottom-navbar a.active {
-        background-color: #4CAF50;
-        color: var(--color);
     }
 }
