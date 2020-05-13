@@ -154,6 +154,7 @@ body {
     .head {
         font-weight: 500;
         font-size: 1.4rem;
+        padding-top: 3%;
     }
     .head p {
         margin: 0px;
