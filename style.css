@@ -116,9 +116,11 @@ body {
         display: none;
     }
     .mobile-container {
-        display: block;
-        /* height: 100%; */
-        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 88%;
+        padding: 5%;
     }
     .head {
         font-weight: 500;
@@ -126,14 +128,14 @@ body {
     }
     .head p {
         margin: 0px;
+        padding-bottom: 6%;
     }
     .mob-about {
         font-size: 1.7rem;
         line-height: 3rem;
-        padding-top: 16%;
     }
     .projects {
-        padding-top: 15%;
+        padding: 6% 0px;
     }
     /* bottom nav */
     .bottom-navbar {
@@ -144,7 +146,6 @@ body {
         /* width: 100%; */
         display: flex;
         justify-content: space-between;
-        padding-top: 36%;
     }
     .bottom-navbar a {
         float: left;
